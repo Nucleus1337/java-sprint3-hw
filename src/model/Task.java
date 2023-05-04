@@ -8,11 +8,24 @@ public class Task {
     private String status;
     private long id;
 
+    public Task() {}
+
     public Task(String name, String description, String status, long id) {
         this.name = name;
         this.description = description;
         this.status = status;
         this.id = id;
+    }
+
+    public Task(String name, String description, String status) {
+        this.name = name;
+        this.description = description;
+        this.status = status;
+    }
+
+    public Task(String name, String description) {
+        this.name = name;
+        this.description = description;
     }
 
     @Override
@@ -59,5 +72,17 @@ public class Task {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }
