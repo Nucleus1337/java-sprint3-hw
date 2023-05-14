@@ -5,19 +5,19 @@ import java.util.Objects;
 public class Task {
     private String name;
     private String description;
-    private String status;
+    private TaskStatus status;
     private long id;
 
     public Task() {}
 
-    public Task(String name, String description, String status, long id) {
+    public Task(String name, String description, TaskStatus status, long id) {
         this.name = name;
         this.description = description;
         this.status = status;
         this.id = id;
     }
 
-    public Task(String name, String description, String status) {
+    public Task(String name, String description, TaskStatus status) {
         this.name = name;
         this.description = description;
         this.status = status;
@@ -49,7 +49,7 @@ public class Task {
         return "Task{" +
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", status='" + status + '\'' +
+                ", status='" + status.toString() + '\'' +
                 ", id=" + id +
                 '}' + "\n";
     }
@@ -62,7 +62,7 @@ public class Task {
         return description;
     }
 
-    public String getStatus() {
+    public TaskStatus getStatus() {
         return status;
     }
 
@@ -70,7 +70,7 @@ public class Task {
         return id;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(TaskStatus status) {
         this.status = status;
     }
 

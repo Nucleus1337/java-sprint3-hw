@@ -3,12 +3,12 @@ package model;
 public class Subtask extends Task {
     private long epicId;
 
-    public Subtask(String name, String description, String status, long id, long epicId) {
+    public Subtask(String name, String description, TaskStatus status, long id, long epicId) {
         super(name, description, status, id);
         this.epicId = epicId;
     }
 
-    public Subtask(String name, String description, String status, long id) {
+    public Subtask(String name, String description, TaskStatus status, long id) {
         super(name, description, status, id);
     }
 
@@ -26,7 +26,7 @@ public class Subtask extends Task {
         return "Subtask{" +
                 "name='" + this.getName() + '\'' +
                 ", description='" + this.getDescription() + '\'' +
-                ", status='" + this.getStatus() + '\'' +
+                ", status='" + this.getStatus().toString() + '\'' +
                 ", id=" + this.getId() +
                 ", epicId=" + epicId +
                 '}' + "\n";

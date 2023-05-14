@@ -5,11 +5,11 @@ import java.util.ArrayList;
 public class Epic extends Task {
     private ArrayList<Long> subtaskId = new ArrayList<>();
 
-    public Epic(String name, String description, String status, long id) {
+    public Epic(String name, String description, TaskStatus status, long id) {
         super(name, description, status, id);
     }
 
-    public Epic(String name, String description, String status) {
+    public Epic(String name, String description, TaskStatus status) {
         super(name, description, status);
     }
 
@@ -35,7 +35,7 @@ public class Epic extends Task {
         return "Epic{" +
                 "name='" + this.getName() + '\'' +
                 ", description='" + this.getDescription() + '\'' +
-                ", status='" + this.getStatus() + '\'' +
+                ", status='" + this.getStatus().toString() + '\'' +
                 ", id=" + this.getId() +
                 '}' + "\n";
     }
