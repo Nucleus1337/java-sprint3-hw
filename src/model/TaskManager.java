@@ -1,6 +1,7 @@
 package model;
 
 import java.util.Collection;
+import java.util.List;
 
 public interface TaskManager {
     /**
@@ -29,7 +30,7 @@ public interface TaskManager {
 
     Collection<Subtask> getAllSubtasks();
 
-    Collection<Subtask> getAllSubtasksByEpicId(long epicId);
+    List<Subtask> getAllSubtasksByEpicId(long epicId);
 
     Task getTaskById(long taskId);
 
