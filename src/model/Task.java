@@ -8,7 +8,8 @@ public class Task {
     private TaskStatus status;
     private long id;
 
-    public Task() {}
+    public Task() {
+    }
 
     public Task(String name, String description, TaskStatus status, long id) {
         this.name = name;

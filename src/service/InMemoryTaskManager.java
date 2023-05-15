@@ -156,7 +156,7 @@ public class InMemoryTaskManager implements TaskManager {
         long allSubtaskCounter = 0;
 
         for (Subtask subtask : subtasks.values()) {
-            if (subtask.getEpicId() == epic.getId()){
+            if (subtask.getEpicId() == epic.getId()) {
                 switch (subtask.getStatus()) {
                     case NEW:
                         newStatusCounter++;

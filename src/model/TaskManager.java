@@ -6,12 +6,14 @@ import java.util.List;
 public interface TaskManager {
     /**
      * Создать задачу
+     *
      * @param task объект класса Task
      */
     void createTask(Task task);
 
     /**
      * Создать эпик-задачу
+     *
      * @param epic объект класса Epic
      */
     void createEpic(Epic epic);
