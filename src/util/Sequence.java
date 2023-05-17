@@ -1,4 +1,4 @@
-package model;
+package util;
 
 public class Sequence {
     private static long id = 1;

@@ -1,6 +1,7 @@
 package service;
 
 import model.*;
+import util.Managers;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static model.Sequence.getNextId;
+import static util.Sequence.getNextId;
 import static model.TaskStatus.*;
 
 public class InMemoryTaskManager implements TaskManager {

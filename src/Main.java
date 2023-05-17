@@ -1,5 +1,6 @@
 import model.*;
-import service.Managers;
+import service.TaskManager;
+import util.Managers;
 
 import static model.TaskStatus.DONE;
 

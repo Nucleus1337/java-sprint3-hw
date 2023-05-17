@@ -1,7 +1,9 @@
-package service;
+package util;
 
-import model.HistoryManager;
-import model.TaskManager;
+import service.HistoryManager;
+import service.TaskManager;
+import service.InMemoryHistoryManager;
+import service.InMemoryTaskManager;
 
 public class Managers {
     public static TaskManager getDefault() {
