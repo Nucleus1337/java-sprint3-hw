@@ -6,7 +6,6 @@ import static model.TaskStatus.DONE;
 public class Main {
     public static void main(String[] args) {
         TaskManager taskManager = Managers.getDefault();
-        HistoryManager historyManager = Managers.getDefaultHistory();
 
         taskManager.createTask(new Task("Task1", "TaskDesc1")); /*1*/
         taskManager.createTask(new Task("Task2", "TaskDesc2")); /*2*/
@@ -38,7 +37,7 @@ public class Main {
         taskManager.getSubtaskById(4);
 
         System.out.println("=====HISTORY=====");
-        System.out.println(historyManager.getHistory());
+        System.out.println(taskManager.getHistory());
 
         taskManager.updateTask(new Task("Task1", "TaskDesc1", DONE, 1));
         taskManager.updateSubtask(new Subtask("Subtask1 Epic2", "Subtask1 Epic2 desc plus some more text",

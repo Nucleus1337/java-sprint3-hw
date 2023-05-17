@@ -181,4 +181,9 @@ public class InMemoryTaskManager implements TaskManager {
             epic.setStatus(IN_PROGRESS);
         }
     }
+
+    @Override
+    public List<Task> getHistory() {
+        return historyManager.getHistory();
+    }
 }
